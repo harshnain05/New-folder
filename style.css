@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+  background-image: url(./night-sky.jpg);
+  background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.snowflake {
+    position: absolute;
+    background-image: url("https://i.postimg.cc/TPSBWW9m/snowflake-image.png");
+    background-size: cover;
+    border-radius: 50px;
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translate(50%, 50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(50%, 1000%);
+        opacity: 0;
+    }
+}
